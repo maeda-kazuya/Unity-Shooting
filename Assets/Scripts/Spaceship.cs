@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Spaceship : MonoBehaviour {
 	// Moving speed
 	public float speed;
@@ -21,6 +22,7 @@ public class Spaceship : MonoBehaviour {
 		GetComponent<Rigidbody2D> ().velocity = direction * speed;
 	}
 
+	/*
 	// Use this for initialization
 	void Start () {
 	
@@ -30,4 +32,5 @@ public class Spaceship : MonoBehaviour {
 	void Update () {
 	
 	}
+	*/
 }
